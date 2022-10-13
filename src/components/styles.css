@@ -1,0 +1,16 @@
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  display: block;
+  padding: 0;
+}
+.page {
+  max-width: 650px;
+  margin: 10px auto;
+  padding: 30px 35px;
+  background-color: rgba(158, 151, 212, 0.336);
+}
