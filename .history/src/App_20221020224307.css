@@ -8,12 +8,7 @@
 }
 .App a {
  color: #8a80e6;
- text-decoration: none;
 }
-.App a:hover{
-  color: #8a80e6;
-  text-decoration: underline;
- }
 .author {
   color: #7a778ff1;
 }

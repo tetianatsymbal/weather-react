@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Weather from "./Weather";
@@ -15,7 +14,7 @@ function App() {
           >
             Open-source code
           </a>
-          <span className="author"> by Tania Tsymbal</span>
+          <span> by Tania Tsymbal</span>
         </div>
       </footer>
     </div>

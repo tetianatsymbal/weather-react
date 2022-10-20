@@ -5,15 +5,5 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgb(255, 255, 255);
   padding: 20px;
-}
-.App a {
- color: #8a80e6;
- text-decoration: none;
-}
-.App a:hover{
-  color: #8a80e6;
-  text-decoration: underline;
- }
-.author {
-  color: #7a778ff1;
+  background-color: rgba(185, 210, 232, 0.991);
 }

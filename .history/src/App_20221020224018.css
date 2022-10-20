@@ -6,14 +6,6 @@
   color: rgb(255, 255, 255);
   padding: 20px;
 }
-.App a {
+a{
  color: #8a80e6;
- text-decoration: none;
-}
-.App a:hover{
-  color: #8a80e6;
-  text-decoration: underline;
- }
-.author {
-  color: #7a778ff1;
 }

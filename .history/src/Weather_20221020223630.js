@@ -1,5 +1,4 @@
 import "./components/styles.css";
-import React from "react";
 import Header from "./components/Header";
 import Form from "./components/Form";
 import Temperature from "./components/Temperature";
