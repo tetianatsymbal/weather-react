@@ -8,21 +8,15 @@ import Forecast from "./components/Forecast";
 import { useState } from "react";
 
 export default function Weather(props) {
-  let [weatherData, setWeatherData] = useState({ ready: false });
+  let [ready, setReady] = useState(false);
+  let [temp, setTemp] = useState(null);
 
   function handleResponse(response) {
-    setWeatherData({
-      city: response.data.name,
-      temp: Math.round(response.data.main.temp),
-      iconUrl: "https://openweathermap.org/img/wn/02d@2x.png",
-      humidity: response.data.main.humidity,
-      wind: response.data.wind.speed,
-      description: response.data.weather[0].description,
-      ready: true,
-    });
+    console.log(response.data);
+    setTemp(Math.round(response.data.main.temp));
   }
 
-  if (weatherData.ready) {
+  if (ready) {
     return (
       // <div classNameName="container">
       //   <div classNameName="cardPage">
@@ -37,7 +31,7 @@ export default function Weather(props) {
           <div className="row">
             <div className="col-12">
               <h1 className="main-city" id="current-city">
-                {props.city}
+                Kyiv
               </h1>
             </div>
           </div>
@@ -46,10 +40,9 @@ export default function Weather(props) {
               <div className="temp-now col-7">
                 <img
                   id="weather-icon"
-                  src={weatherData.iconUrl}
-                  alt={weatherData.description}
+                  src="https://openweathermap.org/img/wn/02d@2x.png"
                 ></img>
-                <span id="current-temp">{weatherData.temp} </span>
+                <span id="current-temp">{temp} </span>
                 <span className="temp-units">
                   <a href="" className="celsius active">
                     °C
@@ -64,15 +57,13 @@ export default function Weather(props) {
                 <h4 className="date-info">Thursday 7 of July</h4>
                 <ul className="list-properties">
                   <li>
-                    <span className="text-capitalize" id="description">
-                      {weatherData.description}
-                    </span>
+                    <span id="description">-</span>
                   </li>
                   <li>
-                    Humidity: <span id="humidity">{weatherData.humidity}</span>%
+                    Humidity: <span id="humidity">0</span>%
                   </li>
                   <li>
-                    Wind: <span id="wind">{weatherData.wind}</span> m/s
+                    Wind: <span id="wind">0</span>m/s
                   </li>
                 </ul>
               </div>
@@ -108,8 +99,9 @@ export default function Weather(props) {
       </div>
     );
   } else {
+    let city = "Kyiv";
     const apiKey = "cff0f825ec363b6c795a4f1421098130";
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(url).then(handleResponse);
 
     return "Loading...";

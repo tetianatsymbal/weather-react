@@ -6,12 +6,12 @@ import Weather from "./Weather";
 function App() {
   return (
     <div className="App">
-      <Weather city="Kyiv" />
+      <Weather />
       <footer>
-        <div className="link-to-code">
+        <div class="link-to-code">
           <a
             href="https://github.com/tetianatsymbal/weather-react"
-            className="link-to-git"
+            className=""="link-to-git"
           >
             Open-source code
           </a>

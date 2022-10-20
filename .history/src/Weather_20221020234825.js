@@ -37,7 +37,7 @@ export default function Weather(props) {
           <div className="row">
             <div className="col-12">
               <h1 className="main-city" id="current-city">
-                {props.city}
+                Kyiv
               </h1>
             </div>
           </div>
@@ -108,6 +108,7 @@ export default function Weather(props) {
       </div>
     );
   } else {
+    let city = "Kyiv";
     const apiKey = "cff0f825ec363b6c795a4f1421098130";
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
     axios.get(url).then(handleResponse);

@@ -13,7 +13,6 @@ ul {
   margin: 10px auto;
   padding: 12px 30px;
   background-color: rgba(158, 151, 212, 0.336);
-  color: #fff;
 }
 .temp-now {
   padding-left: 15px;
@@ -33,6 +32,7 @@ ul {
 .temp-units .active{
   cursor: default;
   color: #fff;
+  font-size: 23px;
   text-decoration: underline;
 }
 .temp-units .active:hover{
