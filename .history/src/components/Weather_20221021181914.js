@@ -10,9 +10,9 @@ export default function Weather(props) {
 
   function handleResponse(response) {
     setWeatherData({
-      city: response.data.name,
+      // defaultCity: response.data.name,
       temp: Math.round(response.data.main.temp),
-      iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      iconUrl: "https://openweathermap.org/img/wn/02d@2x.png",
       date: new Date(response.data.dt * 1000),
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
@@ -40,7 +40,7 @@ export default function Weather(props) {
           <div className="row">
             <div className="col-12">
               <h1 className="main-city" id="current-city">
-                {weatherData.city}
+                {city}
               </h1>
             </div>
           </div>
