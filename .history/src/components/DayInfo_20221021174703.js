@@ -1,6 +1,5 @@
 import React from "react";
 import "./DayInfo.css";
-import FormattedDate from "./FormattedDate";
 
 export default function DayInfo(props) {
   return (
