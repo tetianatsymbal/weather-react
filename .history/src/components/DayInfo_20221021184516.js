@@ -1,14 +1,18 @@
 import React from "react";
 import "./DayInfo.css";
 import FormattedDate from "./FormattedDate";
+import ReactAnimatedWeather from "react-animated-weather";
 import WeatherIcon from "./WeatherIcon";
 
 export default function DayInfo(props) {
   return (
     <div className="weather-row">
       <div className="row col-12">
-        <div className="temp-now col-7 md-3">
-          <WeatherIcon code={props.weatherData.icon} />
+        <div className="temp-now col-7">
+          <WeatherIcon
+            code={props.weatherData.icon}
+            alt={props.weatherData.description}
+          />
           <span id="current-temp">{props.weatherData.temp} </span>
           <span className="temp-units">
             <a href="#" className="celsius active">

@@ -7,7 +7,7 @@ export default function DayInfo(props) {
   return (
     <div className="weather-row">
       <div className="row col-12">
-        <div className="temp-now col-7 md-3">
+        <div className="temp-now col-7">
           <WeatherIcon code={props.weatherData.icon} />
           <span id="current-temp">{props.weatherData.temp} </span>
           <span className="temp-units">
