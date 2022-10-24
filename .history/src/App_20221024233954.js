@@ -20,7 +20,7 @@ function App() {
             and hosted at{" "}
             <a
               href="https://lambent-semifreddo-e944f2.netlify.app/"
-              className="link-to-netlify"
+              className="link-to-git"
             >
               {" "}
               Netlify
