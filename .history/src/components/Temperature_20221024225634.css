@@ -1,9 +1,4 @@
-.Temperature{
-  display: inline-block;
-}
-.temperature {
-  color: rgb(149, 126, 175);
-}
+
 .temp-units {
   font-size: 16px;
   position: relative;
@@ -12,18 +7,15 @@
   color: rgb(149, 126, 175);
 }
 .temp-units a {
-  color: #fff;
-  text-decoration: none;
-}
-.temp-units a:hover {
-  cursor: pointer;
+  cursor: default;
   color: #fff;
   text-decoration: underline;
 }
+.temp-units a:hover {
+  cursor: default;
+  color: #fff;
+}
 .celsius, .fahrenheit{
   text-decoration: none;
-  color: white;
-}
-.divider {
   color: white;
 }

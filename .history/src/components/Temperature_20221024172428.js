@@ -21,7 +21,7 @@ export default function Temperature(props) {
       <div className="Temperature">
         <span className="temperature">{props.celsius}</span>
         <span className="temp-units">
-          °C <span className="divider">|</span>{" "}
+          °C |{" "}
           <a href="/" onClick={showFahrenheit}>
             °F
           </a>
@@ -37,7 +37,7 @@ export default function Temperature(props) {
           <a href="/" onChange={showCelsius}>
             °C
           </a>{" "}
-          <span className="divider">|</span> °F
+          | °F
         </span>
       </div>
     );

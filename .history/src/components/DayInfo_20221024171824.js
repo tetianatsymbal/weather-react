@@ -11,7 +11,7 @@ export default function DayInfo(props) {
         <div className="temp-now col-7 md-3">
           <WeatherIcon code={props.weatherData.icon} />
           <Temperature celsius={props.weatherData.temp} />
-          {/* <span id="current-temp">{props.weatherData.temp} </span>
+          <span id="current-temp">{props.weatherData.temp} </span>
           <span className="temp-units">
             <a href="#" className="celsius active">
               °C
@@ -20,7 +20,7 @@ export default function DayInfo(props) {
             <a href="#" className="fahrenheit">
               °F
             </a>
-          </span> */}
+          </span>
         </div>
         <div className="weather-properties col-5">
           <h4 className="date-info">
