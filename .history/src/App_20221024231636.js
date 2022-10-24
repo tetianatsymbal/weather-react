@@ -17,14 +17,7 @@ function App() {
           </a>
           <span className="author"> by Tania Tsymbal</span>{" "}
           <span>
-            hosted at{" "}
-            <a
-              href="https://github.com/tetianatsymbal/weather-react"
-              className="link-to-git"
-            >
-              {" "}
-              Netlify
-            </a>
+            hosted at <span> Netlify</span>
           </span>
         </div>
       </footer>
