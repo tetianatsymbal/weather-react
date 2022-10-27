@@ -33,7 +33,6 @@ export default function Weather(props) {
     search();
   }
   function cityChange(event) {
-    event.preventDefault();
     setCity(event.target.value);
   }
 
@@ -79,7 +78,7 @@ export default function Weather(props) {
               </button>
             </form>
           </div>
-          <Forecast coord={weatherData.coord} />
+          <Forecast code={weatherData.icon} coord={weatherData.coord} />
         </div>
       </div>
     );

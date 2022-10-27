@@ -12,6 +12,7 @@ export default function Forecast(props) {
   }, [props.coord]);
 
   function handleResponse(response) {
+    console.log(response.data);
     setForecast(response.data.daily);
     setLoaded(true);
   }
@@ -21,7 +22,9 @@ export default function Forecast(props) {
       <section className="row forecast">
         {forecast.map(function(dayForecast, index) {
           if (index < 7) {
-            return <DayForecast data={dayForecast} key={index} />;
+            return (
+              <DayForecast code={props.code} data={dayForecast} key={index} />
+            );
           } else {
             return null;
           }

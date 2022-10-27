@@ -6,11 +6,11 @@ import { useState } from "react";
 import Forecast from "./Forecast";
 
 export default function Weather(props) {
-  const [weatherData, setWeatherData] = useState({ ready: false });
+  const [weatherData, setWeatherData] = useState(false);
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    console.log(response);
+    // console.log(response);
     setWeatherData({
       city: response.data.name,
       temp: Math.round(response.data.main.temp),
@@ -33,7 +33,6 @@ export default function Weather(props) {
     search();
   }
   function cityChange(event) {
-    event.preventDefault();
     setCity(event.target.value);
   }
 
@@ -79,7 +78,7 @@ export default function Weather(props) {
               </button>
             </form>
           </div>
-          <Forecast coord={weatherData.coord} />
+          <Forecast code={weatherData.icon} coord={weatherData.coord} />
         </div>
       </div>
     );
