@@ -3,11 +3,10 @@
  margin: 0 auto;
  text-align: center;
  align-items: center;
- justify-content: space-between;
- font-size: 17px;
+ justify-content: space-around;
 }
 .forecast-temperature-max {
- margin-right: 10px;
+ margin-right: 12px;
 }
 .forecast-temperature-min {
  opacity: 0.8;

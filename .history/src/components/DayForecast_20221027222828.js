@@ -11,7 +11,7 @@ export default function DayForecast(props) {
   }
 
   return (
-    <div className="col">
+    <div className="col-2">
       <div className="forecast-day">
         <h5>{day()}</h5>
       </div>

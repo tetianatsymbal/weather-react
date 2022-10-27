@@ -15,11 +15,9 @@ export default function Forecast(props) {
   if (loaded) {
     return (
       <section className="row forecast">
-        {forecast.map(function(dayForecast, index) {
-          if (index < 7) {
-            return <DayForecast code={props.code} data={dayForecast} />;
-          }
-        })}
+        <DayForecast code={props.code} data={forecast[0]} />
+        <DayForecast code={props.code} data={forecast[1]} />
+        <DayForecast code={props.code} data={forecast[2]} />
       </section>
     );
   } else {
