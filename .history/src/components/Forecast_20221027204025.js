@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import axios from "axios";
 import "./Forecast.css";
 import DayForecast from "./DayForecast";
@@ -15,9 +15,7 @@ export default function Forecast(props) {
   if (loaded) {
     return (
       <section className="row forecast">
-        <DayForecast code={props.code} data={forecast[0]} />
-        <DayForecast code={props.code} data={forecast[0]} />
-        <DayForecast code={props.code} data={forecast[0]} />
+        <DayForecast data={} />
       </section>
     );
   } else {

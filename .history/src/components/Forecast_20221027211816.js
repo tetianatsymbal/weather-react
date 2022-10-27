@@ -16,8 +16,6 @@ export default function Forecast(props) {
     return (
       <section className="row forecast">
         <DayForecast code={props.code} data={forecast[0]} />
-        <DayForecast code={props.code} data={forecast[0]} />
-        <DayForecast code={props.code} data={forecast[0]} />
       </section>
     );
   } else {

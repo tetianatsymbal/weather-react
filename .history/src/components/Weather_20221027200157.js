@@ -79,6 +79,8 @@ export default function Weather(props) {
             </form>
           </div>
           <Forecast code={weatherData.icon} coord={weatherData.coord} />
+          <Forecast code={weatherData.icon} coord={weatherData.coord} />
+          <Forecast code={weatherData.icon} coord={weatherData.coord} />
         </div>
       </div>
     );
