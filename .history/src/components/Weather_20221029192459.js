@@ -37,6 +37,7 @@ export default function Weather(props) {
   }
 
   if (weatherData.ready) {
+    console.log(weatherData.ready);
     return (
       <div className="container">
         <div className="card page">

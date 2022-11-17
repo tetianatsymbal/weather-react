@@ -3,7 +3,7 @@ import axios from "axios";
 import "./Forecast.css";
 import DayForecast from "./DayForecast";
 
-export default function Forsecast(props) {
+export default function Forecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
 
@@ -12,7 +12,7 @@ export default function Forsecast(props) {
   }, [props.coord]);
 
   function handleResponse(response) {
-    console.log("go");
+    console.log(response);
     setForecast(response.data.daily);
     setLoaded(true);
   }

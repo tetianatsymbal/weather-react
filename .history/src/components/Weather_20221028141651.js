@@ -10,6 +10,7 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
+    console.log(response);
     setWeatherData({
       city: response.data.name,
       temp: Math.round(response.data.main.temp),
@@ -38,6 +39,13 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
+      <Switch
+      onChange={() => setIsDark(!isDark)}
+      {...label}
+      title={
+        isDark ? `Switch on "Light" theme` : `Switch on "Dark" theme`
+      }
+    />
       <div className="container">
         <div className="card page">
           <div className="row">

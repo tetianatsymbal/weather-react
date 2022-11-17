@@ -3,7 +3,8 @@ import axios from "axios";
 import "./Forecast.css";
 import DayForecast from "./DayForecast";
 
-export default function Forsecast(props) {
+export default function Forecast(props) {
+  console.log("test");
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
 

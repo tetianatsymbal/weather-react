@@ -6,6 +6,7 @@ import { useState } from "react";
 import Forecast from "./Forecast";
 
 export default function Weather(props) {
+  console.log("run");
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
 
