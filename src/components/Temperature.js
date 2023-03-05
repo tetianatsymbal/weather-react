@@ -36,8 +36,9 @@ export default function Temperature(props) {
           {" "}
           <a href="/" onChange={showCelsius}>
             °C
-          </a>{" "}
-          <span className="divider">|</span> °F
+          </a>
+//           {" "}
+//           <span className="divider">|</span> °F 
         </span>
       </div>
     );
